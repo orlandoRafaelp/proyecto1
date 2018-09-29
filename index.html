@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Expresiones Regulares</title>
+</head>
+<body id="estilo">
+<center><h1  id="myHeader">Expresiones Regulares</h1></center>
+<label><strong>Paso 1: </strong>Selecciona el archivo</label>
+<br>
+<input id="cuadro1" type="file" name="adjunto" accept=".txt"/>
+<br>
+<textarea cols="150" rows="20" id="entrada"></textarea>
+<br>
+<label><strong>Paso 2: </strong>Clíck en buscar</label>
+<br>
+<button id="cuadro" onclick="buscarpalabras()";>palabras</button>
+<button id="cuadro" onclick="sinvocales()";>Sin vocales</button>
+<button id="cuadro" onclick="buscarM()";>M</button>
+<button id="cuadro" onclick="buscarComillas()";>Comillas</button>
+<button id="cuadro" onclick="buscarIp()";>Ips</button>
+<button id="cuadro" onclick="buscarFechas()";>Fechas</button>
+<button id="cuadro" onclick="buscarTelefono()";>Telefonos</button>
+<button id="cuadro" onclick="buscarCorreo()";>Correo</button>
+<button id="cuadro" onclick="buscarUrl()";>Url</button>
+<button id="cuadro" onclick="buscarCpostal  ()";>CPostal</button>
+<div id="resultados"></div>
+<!-- <textarea cols="150" rows="20" id="resultados"></textarea> -->
+
+<style>
+#texto{
+	float: left;
+}
+
+#cuadro1{
+	font-size: 20px;
+	
+}
+#demo{
+    margin: 0em 1%;
+	padding: 1em 7em;
+	position: static;
+	width: 60%;
+	
+}
+
+#cuadro{
+	float: left;
+   font-size: 15px;
+	width: 10%;
+	
+}
+#estilo {background-color: powderblue;}
+#myHeader {
+      color: Black;
+    padding: 40px;
+    text-align: center;
+}
+</style>
+<script src="test.js" type="text/javascript"></script>
+
+</body>
+</html>
